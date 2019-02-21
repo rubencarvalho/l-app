@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import Header from '../Header'
-import Filter from '../Filter'
 
 export default class Home extends Component {
   state = {
@@ -17,14 +16,7 @@ export default class Home extends Component {
   render() {
     return (
       <div>
-        <Header>
-          {this.state.activeTag}
-          <Filter
-            items={this.state.tags}
-            active={this.state.activeTag}
-            onClick={this.setFilter}
-          />
-        </Header>
+        <Header />
       </div>
     )
   }

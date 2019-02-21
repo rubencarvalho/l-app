@@ -4,7 +4,7 @@ import styled from 'styled-components'
 const Grid = styled.section`
   display: grid;
   grid-auto-flow: column;
-  grid-gap: 2px;
+  grid-gap: 20px;
 `
 
 const Link = styled.div`
@@ -15,10 +15,11 @@ const Link = styled.div`
   justify-content: center;
   padding: 10px;
   flex: 1 1;
-  background: ${p => (p.active ? 'rgba(83, 42, 172, 0.27)' : 'transparent')};
+  background: ${p => (p.active ? '#c19b76' : 'transparent')};
   text-transform: uppercase;
   color: white;
-  border: 1px solid black;
+  border: 2px solid #c19b76;
+  border-radius: 5px;
 `
 
 export default class Filter extends Component {
