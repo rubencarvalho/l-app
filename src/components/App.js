@@ -2,10 +2,10 @@ import React, { Component } from 'react'
 import styled from 'styled-components'
 import GlobalStyle from './GlobalStyle'
 import { BrowserRouter as Router, Route, NavLink } from 'react-router-dom' // keine der Dateien ist default und werden exportiert von react-router-dom. werden ohne
-import Home from './routes/Home'
-import Create from './routes/Create'
-import Bookmarks from './routes/Bookmarks'
-import Settings from './routes/Settings'
+import Home from '../routes/Home'
+import Create from '../routes/Create'
+import Bookmarks from '../routes/Bookmarks'
+import Settings from '../routes/Settings'
 import Span2 from './Span2'
 
 const Grid = styled.div`
